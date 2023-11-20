@@ -16,10 +16,10 @@ function Login() {
     e.preventDefault()
     try {
       const login = await loginAdmin(form)
-      console.log(login)
+      // console.log(login)
       setToken(login.data)
     } catch (error) {
-      
+
       alert("invalid credentials")
     }
   }

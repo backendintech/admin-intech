@@ -19,7 +19,7 @@ function Login() {
       console.log(login)
       setToken(login.data)
     } catch (error) {
-      console.log(error)
+      
       alert("invalid credentials")
     }
   }

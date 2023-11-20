@@ -53,8 +53,7 @@ const updateProductById = async ({ form, id }) => {
 
     formData.append("name", form.name);
     formData.append("description", form.description);
-    formData.append("stock", form.stock);
-    formData.append("purchase_price", form.purchase_price);
+    formData.append("keypoints", JSON.stringify(form.keypoints));
     formData.append("sell_price", form.sell_price);
     formData.append("thumbnail", form.thumbnail);
     formData.append("image1", form.image1);
